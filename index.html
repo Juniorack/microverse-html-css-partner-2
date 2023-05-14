@@ -23,16 +23,16 @@
     -->
     <main id="main">
       <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform</p>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
       <div>
         <label id="name-label">Name</label>
-        <input id="name" type="text" placeholder="Enter your name">
+        <input id="name" type="text" placeholder="Enter your name" required>
       </div>
 
       <div>
         <label id="email-label" placeholder="Enter your email">Email</label>
-        <input id="email" type="email" >
+        <input id="email" type="email" placeholder="Your email" required>
       </div>
 
       <div>
@@ -50,33 +50,48 @@
           <option>Other</option>
         </select>
       </div>
+
       <p>Would you recommend freeCodeCamp to a friend?</p>
       <div>
-        <input type="radio" name="radio-button"> Definitely
+        <input type="radio" name="radio-button" value="Definitely"> Definitely
       </div> 
-      <div> <input type="radio" name="radio-button"> Maybe 
+      <div> <input type="radio" name="radio-button" value="Maybe"> Maybe 
       </div>
     
-        <input type="radio" name="radio-button">Not sure
+        <input type="radio" name="radio-button" value="Not sure">Not sure
       </div>
+
       <p>What would you like to see improved? (Check all that apply)</p>
       <div>
         <input type="checkbox" value="Front-end Project"> Front-end Project
+      </div>
+
       <div>
         <input type="checkbox" value="Back-end Project"> Back-end Project
       </div>
+
        <div>
         <input type="checkbox" value="Visualization"> Data Visualization
       </div>
+
        <div>
         <input type="checkbox" value="Challenges"> Challenges
       </div>
+
        <div>
         <input type="checkbox" value="Open Source Community"> Open Source Community
       </div>
+
        <div>
         <input type="checkbox" value="Gitter Help Room">Gitter Help Room
       </div>
+
+      <div>
+        <label for=textarea>Any comments or suggestions?</label>
+      <textarea id="textarea" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <button id="submit" type="submit">Submit</button>
     </form>
     </main>
 
